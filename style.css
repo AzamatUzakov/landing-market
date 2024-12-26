@@ -27,6 +27,9 @@ header img {
     object-fit: cover;
 }
 
+.cardBox{
+    overflow: hidden;
+}
 .cardBox img {
     width: 100%;
     margin-top: 25px;
