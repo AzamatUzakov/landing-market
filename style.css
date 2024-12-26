@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+
+body {
+    width: 100%;
+}
+
+main {
+    max-width: 390px;
+    /*     background-color: red;
+     */
+    height: 100%;
+    margin: 0 auto;
+}
+
+header img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardBox img {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.saleBtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -50px;
+    padding: 0 10px 0;
+}
+
+.leftBorder {
+    height: 67px;
+    background-color: #FF9900B2;
+    width: 100%;
+    text-align: end;
+    padding: 0 8px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    color: #9A5D00;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.rightBorder {
+    height: 67px;
+    background-color: #FF9900B2;
+    width: 100%;
+    padding: 0 0 0 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    color: #FFFFFF;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.middle_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 102px;
+    width: 100%;
+    text-align: center;
+    background-color: #FF9900;
+    border-radius: 20px;
+    box-shadow: 0px 4px 25px 0px #FF9900;
+
+}
+
+.middle_btn h1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.middle_btn p {
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+}
+
+
+.buyBtn {
+    width: 100%;
+    height: 63px;
+    background-color: #FF9900;
+    box-shadow: 0px 4px 25px 0px #FF9900;
+    border-radius: 25px;
+    border: 0;
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.buyBtn:hover {
+    background-color: gainsboro;
+    color: black;
+    transition: .4s ease;
+}
+
+
+
+.saleDecember {
+    width: 80%;
+    height: 106px;
+    background-color: white;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.saleDecember p {
+    font-weight: 700;
+    font-size: 24px;
+    color: #FF9900;
+}
+
+.saleDecember p:nth-of-type(2) {
+    color: black;
+    margin-top: 10px;
+}
+
+
+.productBox {
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px 15px 21px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.productBox h2 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #272727;
+}
+
+.productBox p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.07px;
+}
+
+
+.characteristics {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 25px 20px;
+    background-color: white;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+
+.characteristics h2 {
+    font-size: 18px;
+    color: #272727;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.row {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.item p {
+    color: #272727;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+.item p:nth-of-type(1) {
+    font-size: 16px;
+    font-weight: 400;
+    color: #272727;
+    margin-bottom: 5px;
+}
+
+
+.feedbackBtn {
+    width: 80%;
+    background-color: rgba(0, 0, 139, 0);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: 500;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: .5s ease-in;
+}
+
+.feedbackBtn:hover {
+    font-size: 23px;
+    transition: .5s ease-in;
+}
+
+
+
+
+.guarantees h1 {
+    color: #272727;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+.guarantees_item {
+    width: 85%;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.2);
+    padding: 30px 29px;
+    border-radius: 25px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.posterBlock {
+    width: 143px;
+    text-align: center;
+    background-color: #FF9900;
+    border-radius: 25px;
+    padding: 18px 0;
+    margin: 0 auto;
+
+}
+
+.posterBlock img {
+    width: 58px;
+    height: 51px;
+    margin: 0;
+}
+
+.guarantees_item h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.guarantees_item p {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+.formBlock {
+    position: relative !important;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    padding: 25px 12px 55px;
+    margin-top: 40px;
+    height: 442px;
+    display: block;
+
+    transition: .8s ease-in-out
+}
+
+.gloves {
+    display: block !important;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -6% !important;
+    left: 35%;
+}
+
+.tgForm {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.tgForm input {
+    width: 100%;
+    padding: 24px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #272727B2;
+    margin-bottom: 15px;
+}
+
+.sendForm {
+    width: 80%;
+    border-radius: 50px;
+    border: 0;
+    background-color: #FF9900;
+    box-shadow: 0px 4px 25px 0px #FF9900;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0;
+    margin-top: 5px;
+    color: white;
+    transition: .5s ease-in;
+}
+
+.sendForm:hover {
+    background-color: gainsboro;
+    color: black;
+    transition: .5s ease-in;
+    cursor: pointer;
+}
+
+.quantity {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.quantity b {
+    color: red;
+    font-weight: 500;
+}
+
+.snowman {
+    width: 151px !important;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    height: 151px;
+    left: -0%;
+}
+
+
+footer {
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 25px 0;
+    text-align: center;
+    line-height: 17px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+.noneBlock {
+    display: none;
+    transition: .8s ease-in-out;
+}
+
+.moreSale img {
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.moreeBtn {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #8204FF;
+    border: 0;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 10px 0;
+    margin-top: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    box-shadow: 0px 4px 20px 0px #8204FF40;
+
+}
+
+.moreeBtn:hover {
+    transition: .5s ease-in-out;
+    background-color: gainsboro;
+    color: #000000;
+}
+
+/* Основной стиль модального окна */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+/* Содержимое модального окна */
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+}
+
+.modalGloves {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+
+    z-index: 1;
+}
+
+.modal-content h2 {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 35px;
+
+    z-index: 3px;
+}
+
+/* Закрывающая кнопка */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+.snowmanModal {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Поле ввода имени и кнопка загрузки фото */
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#name-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.custom-file-label {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Скрыть стандартное поле загрузки файла */
+#photo-input {
+    display: none;
+}
+
+/* Текстовое поле */
+#comment-input {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+/* Кнопка отправки */
+button[type="submit"] {
+    background-color: #FF9900;
+    box-shadow: 0px 4px 25px 0px #FF9900;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 23px;
+
+    transition: .5s ease
+}
+
+button[type="submit"]:hover {
+    background-color: gainsboro;
+    transition: .5s ease;
+    color: black;
+}
+
+
+.onlySaleContainer {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    background-color: #00000045;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5 ease-in-out;
+}
+
+.onlySale {
+
+    width: 274px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 58px;
+    border-radius: 25px;
+    background: linear-gradient(to right, #FBE6C7 0%, #FF9900 100%);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    transition: .5s ease-in-out;
+}
+
+.onlySale:hover {
+    transition: .5s ease-in-out;
+    background: gainsboro !important;
+    color: black;
+}
+
+.onlySale img {
+    width: 56px;
+}
+
+
+
+.secondSlider {
+    height: 100%;
+}
+
+.cardFlexBox {
+    width: 100%;
+    display: flex;
+    height: 349px;
+}
+
+.reviewCard {
+    width: 266px;
+    height: 349px;
+    left: 25px;
+    border-radius: 25px;
+    padding: 10px 5px 10px 5px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.reviewGallery {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100px;
+    overflow-x: scroll;
+    cursor: pointer;
+}
+
+.reviewGallery::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+.reviewGallery img {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 20px;
+
+}
+
+.secondSlider {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.gravatar h5 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gravatar p {
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+.secondSlider h1 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #272727;
+
+}
+
+.gravatar img {
+    width: 100px;
+}
+
+
+
+.swiper {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.swiper-wrapper {
+    display: flex;
+    gap: 20px;
+
+
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 266px;
+    height: 349px;
+
+}
+
+
+.topPoster img {
+    width: 100%;
+    height: 450px;
+    box-shadow: 0 4px 10px 0 #0000001C;
+    border-radius: 25px;
+}
+
+.bottomPoster {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    overflow-x: scroll;
+
+}
+
+.bottomPoster::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.bottomPoster::-webkit-scrollbar-track {
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+.bottomPoster::-webkit-scrollbar-thumb {
+    background: #FF9900;
+    border-radius: 10px;
+cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.bottomPoster::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    transition: .5s ease-in-out;
+cursor: pointer;
+}
+
+
+.bottomPoster img {
+    width: 153px;
+    height: 143px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 #0000001C;
+
+}
