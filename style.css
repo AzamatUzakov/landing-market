@@ -29,6 +29,7 @@ header img {
 
 .cardBox{
     overflow: hidden;
+    padding: 0 20px;
 }
 .cardBox img {
     width: 100%;
