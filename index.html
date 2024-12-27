@@ -30,8 +30,8 @@
                     2 999 BYN</p>
             </div>
 
-            <button class="buyBtn">Купить сейчас</button>
-
+            <center> <button class="buyBtn">Купить сейчас</button>
+            </center>
             <div class="saleDecember">
                 <p>-50%</p>
                 <p>10-15 декабря</p>
@@ -49,14 +49,43 @@
 
 
             <div class="firstSlider">
-                <div class="topPoster"><img src="./img/poster1.jfif" alt=""></div>
+                <div class="topPoster">
+                    <img src="./img/poster1.jfif" alt="Main Poster" class="slider-image" onclick="openCarousel(0)">
+                </div>
                 <div class="bottomPoster">
-                    <img src="./img/poster4.jfif" alt="">
-                    <img src="./img/poster2.jfif" alt="">
-                    <img src="./img/poster3.jfif" alt="">
+                    <img src="./img/poster4.jfif" alt="Poster 1" class="slider-image" onclick="openCarousel(1)">
+                    <img src="./img/poster2.jfif" alt="Poster 2" class="slider-image" onclick="openCarousel(2)">
+                    <img src="./img/poster3.jfif" alt="Poster 3" class="slider-image" onclick="openCarousel(3)">
                 </div>
             </div>
 
+
+
+            <div id="modalCarousel" class="modal-container hidden">
+                <div class="modal-content">
+                    <button class="modal-close-btn" onclick="closeCarousel()">×</button>
+                    <div class="modal-item-container">
+                        <div class="modal-item">
+                            <img src="./img/poster1.jfif" alt="Main Poster" class="modal-image">
+                            <div class="modal-text">Описание для 1.</div>
+                        </div>
+                        <div class="modal-item">
+                            <img src="./img/poster4.jfif" alt="Poster 1" class="modal-image">
+                            <div class="modal-text">Описание для 2.</div>
+                        </div>
+                        <div class="modal-item">
+                            <img src="./img/poster2.jfif" alt="Poster 2" class="modal-image">
+                            <div class="modal-text">Описание для 3.</div>
+                        </div>
+                        <div class="modal-item">
+                            <img src="./img/poster3.jfif" alt="Poster 3" class="modal-image">
+                            <div class="modal-text">Описание для 4.</div>
+                        </div>
+                    </div>
+                    <button class="modal-prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="modal-next-btn" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+            </div>
             <div class="characteristics">
                 <h2>Характеристика</h2>
                 <div class="row">
@@ -252,12 +281,20 @@
         </div>
     </div>
     <div class="onlySaleContainer">
-        <button class="onlySale">
+      <a href="https://invite.viber.com/?g2=AQB92puACjgW2VPVLzIEwp9e6nals3ec96njrrODgZE7bzxr1Vi3n/N3fbmd4Ykl">  <button class="onlySale">
             <p>Скидка для вас</p>
             <img src="./img/onlySale.svg" alt="only Sale">
-        </button>
+        </button></a>
     </div>
-
+    <div class="popup-overlay" id="promoPopup">
+        <div class="popup-content">
+          <span class="popup-close" id="closePopup">&times;</span>
+          <img src="./img/viber.jpg" alt="Лого" class="popup-logo">
+          <div class="popup-title">Большие скидки в канале Viber!</div>
+          <div class="popup-text">Подпишитесь, чтобы не пропустить выгодные предложения.</div>
+          <a href="https://invite.viber.com/?g2=AQB92puACjgW2VPVLzIEwp9e6nals3ec96njrrODgZE7bzxr1Vi3n/N3fbmd4Ykl" target="_blank" class="popup-button">Перейти</a>
+        </div>
+      </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
 </body>

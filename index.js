@@ -135,3 +135,45 @@ const swiper = new Swiper('.swiper', {
     },
     grabCursor: true,
 });
+
+
+
+let currentSlide = 0;
+
+function openCarousel(index) {
+    const modal = document.getElementById("modalCarousel");
+    modal.classList.remove("hidden");
+    showSlide(index);
+}
+
+function closeCarousel() {
+    const modal = document.getElementById("modalCarousel");
+    modal.classList.add("hidden");
+}
+
+function changeSlide(direction) {
+    const slides = document.querySelectorAll(".modal-item");
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    showSlide(currentSlide);
+}
+
+function showSlide(index) {
+    const slides = document.querySelectorAll(".modal-item");
+    slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+    });
+    currentSlide = index;
+}
+
+
+setTimeout(() => {
+    const popup = document.getElementById('promoPopup');
+    popup.style.display = 'flex';
+  }, 15000);
+
+
+  const closeButton = document.getElementById('closePopup');
+  closeButton.addEventListener('click', () => {
+    const popup = document.getElementById('promoPopup');
+    popup.style.display = 'none';
+  });

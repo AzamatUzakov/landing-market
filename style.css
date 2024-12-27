@@ -54,7 +54,7 @@ header img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 19.5px;
     color: #9A5D00;
@@ -70,7 +70,7 @@ header img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 19.5px;
     color: #FFFFFF;
@@ -94,19 +94,19 @@ header img {
 
 .middle_btn h1 {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     color: #FFFFFF;
 }
 
 .middle_btn p {
     font-weight: 600;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
 }
 
 
 .buyBtn {
-    width: 100%;
+    width: 80%;
     height: 63px;
     background-color: #FF9900;
     box-shadow: 0px 4px 25px 0px #FF9900;
@@ -118,7 +118,24 @@ header img {
     color: #FFFFFF;
     cursor: pointer;
     transition: .4s ease;
+    animation: pulse 1.5s infinite;
 }
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0px 4px 25px 0px #FF9900;
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0px 6px 30px 0px #FF9900;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0px 4px 25px 0px #FF9900;
+    }
+}
+
 
 .buyBtn:hover {
     background-color: gainsboro;
@@ -549,6 +566,10 @@ button[type="submit"]:hover {
     transition: .5 ease-in-out;
 }
 
+.onlySaleContainer a{
+    text-decoration: none;
+}
+
 .onlySale {
 
     width: 274px;
@@ -728,3 +749,155 @@ cursor: pointer;
     box-shadow: 0 4px 10px 0 #0000001C;
 
 }
+
+
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    width: 360px;
+    max-width: 600px;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.modal-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-item {
+    display: none;
+}
+.modal-item{
+
+}
+.modal-item.active {
+    display: block;
+}
+
+.modal-image {
+    width: 100%;
+    height: 345px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.modal-text {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+.modal-prev-btn,
+.modal-next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal-prev-btn {
+    left: 10px;
+}
+
+.modal-next-btn {
+    right: 10px;
+}
+
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+  }
+  .popup-logo {
+    max-width: 100px;
+    margin: 0 auto 20px;
+  }
+  .popup-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .popup-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  .popup-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .popup-button:hover {
+    background-color: #0056b3;
+  }
+
+
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #555;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
