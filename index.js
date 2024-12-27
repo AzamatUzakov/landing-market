@@ -46,13 +46,15 @@ document.querySelector('.sendForm').addEventListener('click', function () {
 document.addEventListener("DOMContentLoaded", function () {
     const token = '7740126674:AAF5M3TF43ZD9nGWnpnA8h-qEWBKD-35has';
     const chatId = '4592376946';
-
+    let thankBtn = document.querySelector('.thankOtziv')
     const modal = document.getElementById("modal");
     const openModalButton = document.querySelector(".feedbackBtn");
     const closeModalButton = document.getElementById("close-modal");
     const reviewForm = document.getElementById("review-form");
     const photoInput = document.getElementById("photo-input");
     const photoPreviewContainer = document.createElement('div');  // Контейнер для превью изображений
+    let closeThank = document.querySelector('.closeThank')
+
 
     modal.querySelector(".modal-content").insertBefore(photoPreviewContainer, reviewForm);
 
@@ -129,10 +131,13 @@ document.addEventListener("DOMContentLoaded", function () {
             photoPreviewContainer.innerHTML = '';  // Очищаем превью после отправки
         } catch (error) {
             console.error("Ошибка отправки:", error);
-            alert("Произошла ошибка при отправке отзыва. Попробуйте еще раз.");
         }
-        alert("Спасибо за ваш отзыв❤️!");
+        thankBtn.style.display = "flex"
 
+        closeThank.onclick = () => {
+            thankBtn.style.display = "none"
+
+        }
     });
 });
 
@@ -198,7 +203,7 @@ function showSlide(index) {
 setTimeout(() => {
     const popup = document.getElementById('promoPopup');
     popup.style.display = 'flex';
-}, 15000);
+}, 20000);
 
 
 const closeButton = document.getElementById('closePopup');

@@ -27,10 +27,11 @@ header img {
     object-fit: cover;
 }
 
-.cardBox{
+.cardBox {
     overflow: hidden;
     padding: 0 2px;
 }
+
 .cardBox img {
     width: 100%;
     margin-top: 25px;
@@ -60,11 +61,12 @@ header img {
     color: #9A5D00;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    text-shadow: 
-    1px 1px 0px white, 
-    -1px -1px 0px white,  
-    1px -1px 0px white,  
-    -1px 1px 0px white; /* Обводка */
+    text-shadow:
+        1px 1px 0px white,
+        -1px -1px 0px white,
+        1px -1px 0px white,
+        -1px 1px 0px white;
+    /* Обводка */
 }
 
 .rightBorder {
@@ -81,11 +83,11 @@ header img {
     color: #FFFFFF;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    text-shadow: 
-    1px 1px 0px black, 
-    -1px -1px 0px black,  
-    1px -1px 0px black,  
-    -1px 1px 0px black; /* Обводка */
+    text-shadow:
+        0.5px 0.5px 0px black,
+        -0.5px -0.5px 0px black,
+        0.5px -0.5px 0px black,
+        -0.5px 0.5px 0px black
 }
 
 .middle_btn {
@@ -106,22 +108,23 @@ header img {
     font-weight: 600;
     font-size: 20px;
     color: #FFFFFF;
-    text-shadow: 
-    1px 1px 0px black, 
-    -1px -1px 0px black,  
-    1px -1px 0px black,  
-    -1px 1px 0px black; /* Обводка */
+    text-shadow:
+        0.5px 0.5px 0px black,
+        -0.5px -0.5px 0px black,
+        0.5px -0.5px 0px black,
+        -0.5px 0.5px 0px black
 }
 
 .middle_btn p {
     font-weight: 600;
     font-size: 30px;
     color: white;
-    text-shadow: 
-    1px 1px 0px black, 
-    -1px -1px 0px black,  
-    1px -1px 0px black,  
-    -1px 1px 0px black; /* Обводка */
+    text-shadow:
+        1px 1px 0px black,
+        -1px -1px 0px black,
+        1px -1px 0px black,
+        -1px 1px 0px black;
+    /* Обводка */
 }
 
 
@@ -146,10 +149,12 @@ header img {
         transform: scale(1);
         box-shadow: 0px 4px 25px 0px #FF9900;
     }
+
     50% {
         transform: scale(1.1);
         box-shadow: 0px 6px 30px 0px #FF9900;
     }
+
     100% {
         transform: scale(1);
         box-shadow: 0px 4px 25px 0px #FF9900;
@@ -447,12 +452,14 @@ footer {
     background-color: gainsboro;
     color: #000000;
 }
+
 .photo-preview {
     width: 100px;
     height: 100px;
     object-fit: cover;
     margin: 5px;
 }
+
 .modal {
     position: fixed;
     top: 0;
@@ -463,7 +470,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index:999;
+    z-index: 999;
 }
 
 /* Содержимое модального окна */
@@ -590,7 +597,7 @@ button[type="submit"]:hover {
     transition: .5 ease-in-out;
 }
 
-.onlySaleContainer a{
+.onlySaleContainer a {
     text-decoration: none;
 }
 
@@ -756,14 +763,14 @@ button[type="submit"]:hover {
 .bottomPoster::-webkit-scrollbar-thumb {
     background: #FF9900;
     border-radius: 10px;
-cursor: pointer;
+    cursor: pointer;
     transition: .5s ease-in-out;
 }
 
 .bottomPoster::-webkit-scrollbar-thumb:hover {
     background: #555;
     transition: .5s ease-in-out;
-cursor: pointer;
+    cursor: pointer;
 }
 
 
@@ -814,9 +821,9 @@ cursor: pointer;
 .modal-item {
     display: none;
 }
-.modal-item{
 
-}
+.modal-item {}
+
 .modal-item.active {
     display: block;
 }
@@ -878,8 +885,9 @@ cursor: pointer;
     align-items: center;
     z-index: 999;
     justify-content: center;
-  }
-  .popup-content {
+}
+
+.popup-content {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -888,22 +896,26 @@ cursor: pointer;
     max-width: 400px;
     width: 90%;
     position: relative;
-  }
-  .popup-logo {
+}
+
+.popup-logo {
     max-width: 100px;
     margin: 0 auto 20px;
-  }
-  .popup-title {
+}
+
+.popup-title {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  .popup-text {
+}
+
+.popup-text {
     font-size: 14px;
     color: #555;
     margin-bottom: 20px;
-  }
-  .popup-button {
+}
+
+.popup-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007bff;
@@ -911,13 +923,14 @@ cursor: pointer;
     text-decoration: none;
     border-radius: 5px;
     font-size: 14px;
-  }
-  .popup-button:hover {
+}
+
+.popup-button:hover {
     background-color: #0056b3;
-  }
+}
 
 
-  .popup-close {
+.popup-close {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -925,5 +938,39 @@ cursor: pointer;
     color: #555;
     cursor: pointer;
     font-weight: bold;
-  }
-  
+}
+
+
+.thankOtziv {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    background-color: #00000045;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5 ease-in-out;
+    z-index: 999;
+}
+
+.thankBox {
+    text-align: center;
+    padding: 30px;
+    width: 360px;
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+
+}
+
+.closeThank {
+    position: absolute; 
+    top: 1%;
+    right: 5%;
+    cursor: pointer;
+    font-size: 30px;
+}
