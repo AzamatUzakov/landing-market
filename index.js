@@ -12,7 +12,7 @@ document.querySelector('.sendForm').addEventListener('click', function () {
         return;
     }
 
-    const token = '7740126674:AAF5M3TF43ZD9nGWnpnA8h-qEWBKD-35has'; 
+    const token = '7740126674:AAF5M3TF43ZD9nGWnpnA8h-qEWBKD-35has';
     const chatId = '4592376946';
     const text = `Имя: ${name}\nТелефон: ${phone}`;
 
@@ -41,14 +41,20 @@ document.querySelector('.sendForm').addEventListener('click', function () {
     formBlock.style.display = "none"
     noneBlock.style.display = "block"
 });
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const token = '7740126674:AAF5M3TF43ZD9nGWnpnA8h-qEWBKD-35has';
-    const chatId = '4592376946'; 
+    const chatId = '4592376946';
 
     const modal = document.getElementById("modal");
-    const openModalButton = document.querySelector(".feedbackBtn"); 
+    const openModalButton = document.querySelector(".feedbackBtn");
     const closeModalButton = document.getElementById("close-modal");
     const reviewForm = document.getElementById("review-form");
+    const photoInput = document.getElementById("photo-input");
+    const photoPreviewContainer = document.createElement('div');  // Контейнер для превью изображений
+
+    modal.querySelector(".modal-content").insertBefore(photoPreviewContainer, reviewForm);
 
     openModalButton.addEventListener("click", function () {
         modal.style.display = "flex";
@@ -58,6 +64,25 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.style.display = "none";
     });
 
+    photoInput.addEventListener("change", function () {
+        const files = photoInput.files;
+        photoPreviewContainer.innerHTML = '';  // Очищаем предыдущие превью
+        for (let i = 0; i < files.length; i++) {
+            const file = files[i];
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                const img = document.createElement('img');
+                img.src = e.target.result;
+                img.alt = file.name;
+                img.classList.add("photo-preview");  // Добавляем класс для стилизации
+                photoPreviewContainer.appendChild(img);
+            };
+
+            reader.readAsDataURL(file);
+        }
+    });
+
     reviewForm.addEventListener("submit", async function (e) {
         e.preventDefault();
 
@@ -65,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const name = document.getElementById("name-input").value.trim();
         const comment = document.getElementById("comment-input").value.trim();
-        const photoInput = document.getElementById("photo-input");
         const files = photoInput.files;
 
         if (!name || !comment) {
@@ -74,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         try {
+            // Если есть фотографии, отправляем их
             if (files.length > 0) {
                 for (let i = 0; i < files.length; i++) {
                     const fileFormData = new FormData();
@@ -87,6 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     });
                 }
             } else {
+                // Если нет фото, отправляем только текст
                 await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
                     method: "POST",
                     headers: {
@@ -99,14 +125,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
 
-            alert("Отзыв успешно отправлен!");
             reviewForm.reset();
+            photoPreviewContainer.innerHTML = '';  // Очищаем превью после отправки
         } catch (error) {
             console.error("Ошибка отправки:", error);
             alert("Произошла ошибка при отправке отзыва. Попробуйте еще раз.");
         }
+        alert("Спасибо за ваш отзыв❤️!");
+
     });
 });
+
 let onlySale = document.querySelector('.onlySale')
 
 
@@ -169,11 +198,11 @@ function showSlide(index) {
 setTimeout(() => {
     const popup = document.getElementById('promoPopup');
     popup.style.display = 'flex';
-  }, 15000);
+}, 15000);
 
 
-  const closeButton = document.getElementById('closePopup');
-  closeButton.addEventListener('click', () => {
+const closeButton = document.getElementById('closePopup');
+closeButton.addEventListener('click', () => {
     const popup = document.getElementById('promoPopup');
     popup.style.display = 'none';
-  });
+});
