@@ -843,11 +843,11 @@ button[type="submit"]:hover {
 
 .modal-close-btn {
     position: absolute;
-    top: 10px;
+    top: 1%;
     right: 10px;
     background: transparent;
     border: none;
-    font-size: 30px;
+    font-size: 50px;
     color: black;
     cursor: pointer;
 }
