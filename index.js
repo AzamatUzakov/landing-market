@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         modal.style.display = "none";
 
-        const name = document.getElementById("name-input").value.trim();
+      /*   const name = document.getElementById("name-input").value.trim();
         const comment = document.getElementById("comment-input").value.trim();
         const files = photoInput.files;
 
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
             photoPreviewContainer.innerHTML = '';  // Очищаем превью после отправки
         } catch (error) {
             console.error("Ошибка отправки:", error);
-        }
+        } */
         thankBtn.style.display = "flex"
 
         setTimeout(() => {
