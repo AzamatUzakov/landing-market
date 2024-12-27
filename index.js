@@ -134,10 +134,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         thankBtn.style.display = "flex"
 
-        closeThank.onclick = () => {
+        setTimeout(() => {
             thankBtn.style.display = "none"
 
-        }
+        }, 2000);
+        
+        
     });
 });
 
