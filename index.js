@@ -12,7 +12,7 @@ document.querySelector('.sendForm').addEventListener('click', function () {
         return;
     }
 
-    const token = '7740126674:AAF5M3TF43ZD9nGWnpnA8h-qEWBKD-35has'; // Ваш токен
+    const token = '7740126674:AAF5M3TF43ZD9nGWnpnA8h-qEWBKD-35has'; 
     const chatId = '4592376946';
     const text = `Имя: ${name}\nТелефон: ${phone}`;
 
@@ -42,11 +42,11 @@ document.querySelector('.sendForm').addEventListener('click', function () {
     noneBlock.style.display = "block"
 });
 document.addEventListener("DOMContentLoaded", function () {
-    const token = '7740126674:AAF5M3TF43ZD9nGWnpnA8h-qEWBKD-35has'; // Ваш токен
-    const chatId = '4592376946'; // Ваш chat_id
+    const token = '7740126674:AAF5M3TF43ZD9nGWnpnA8h-qEWBKD-35has';
+    const chatId = '4592376946'; 
 
     const modal = document.getElementById("modal");
-    const openModalButton = document.querySelector(".feedbackBtn"); // Кнопка открытия модалки
+    const openModalButton = document.querySelector(".feedbackBtn"); 
     const closeModalButton = document.getElementById("close-modal");
     const reviewForm = document.getElementById("review-form");
 

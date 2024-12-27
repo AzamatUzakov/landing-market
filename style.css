@@ -602,6 +602,8 @@ button[type="submit"]:hover {
 
 .secondSlider {
     height: 100%;
+    position: relative;
+    z-index: -1;
 }
 
 .cardFlexBox {
